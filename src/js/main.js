@@ -14,11 +14,15 @@ fetchPosts
       const body = post.body;
       console.log(title);
       console.log(body);
+      
       const postTitle = document.createElement("h2");
       const postBody = document.createElement("p");
       postTitle.textContent = title;
       postBody.textContent = body;
-      mainContainer.append(postTitle);
-      mainContainer.append(postBody);
+      postsMain.append(postTitle, postBody);
+      // postsMain.append(postBody);
+
+      // document.getElementById("po").className = " newClass";  
+      
     });
   });
